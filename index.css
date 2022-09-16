@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #fd4646;
+    --green-main: #088178;
+    --light-bg: #E3E6F3;
+    --light-color: #666;
+    --box-shadow: .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: var(--light-bg);
+}
+
+/* ======================== Logo Style ============================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--green-main);
+}
+
+/* ========================== Center nav style ====================== */
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--green-main);
+    font-weight: bold;
+    position: relative;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.navbar a.active::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.active {
+    color: var(--main-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* ======================= Right Icon Style =========================== */
+
+.header .icons .icons-item i {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    background: #eee;
+    color: var(--green-main);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons .icons-item i:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.header .icons .button {
+    padding: 10px 20px;
+    background: #eee;
+    color: var(--green-main);
+    border-radius: 20px;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    width: 100%;
+}
+
+.header .icons .button:hover {
+    color: #fff;
+    background: var(--main-color);
+}
+
+#menu-btn,
+#close {
+    display: none;
+}
+
+/* 
+================================================================================
+                                 Products Wise List Conainers
+================================================================================*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:12rem;
+}
+
+.product-wise-col-5 {
+    width: 100px;
+    min-width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.product-wise-col-5 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-wise-col-5 img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.product-wise-col-5 h5 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+} 
+/*================================================================================
+                                 Products Wise List Conainers
+================================================================================
+*/
+
+
+
+
+/* 
+================================================================================
+                                 Products List Conainers
+================================================================================
+*/
+
+
+.section {
+    margin-top: 10rem;
+    background: var(--light-bg);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: var(--border);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row .first {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.row .first .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+
+.row .first .small-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: var(--light-color);
+}
+
+
+.row .viewall-button {
+    color: white;
+    background: var(--green-main);
+    padding: 10px 20px;
+    font-size: 2rem;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+    cursor: pointer;
+}
+
+.row .viewall-button:hover {
+    background: var(--main-color);
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 2rem;
+    background: red;
+}
+
+.pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.3s ease;
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro .des img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.pro .des span {
+    font-size: 12px;
+    color: #606063;
+}
+
+.pro .des h5 {
+    color: #1a1a1a;
+    padding-top: 7px;
+    font-size: 14px;
+    margin: 1.5rem 0;
+}
+
+.pro .des .star i {
+    color: rgb(243, 181, 25);
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pro .des h4 {
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.pro .des .addcart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pro .des .addcart:hover {
+    color: white;
+    background: var(--main-color);
+}
+
+.pro .des .heart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    top: 10px;
+    right: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pro .des .heart:hover {
+    color: white;
+    background: var(--main-color);
+}
+
+.owl-carousel {
+    padding-left: 5.5rem;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(40% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 100px !important;
+    z-index: 1;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(40% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 100px !important;
+    z-index: 1;
+}
+
+/* 
+================================================================================
+                                 CartList Conainer
+================================================================================
+*/
+
+.cart {
+    position: absolute;
+    top: 0rem;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+    background: var(--light-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.cart.active {
+    right: 0;
+    transition: .4s linear;
+}
+
+.cart-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: var(--green-main);
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: .5rem;
+}
+
+.cart-Title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: black;
+}
+
+.cart-price {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    border-top: 1px solid black;
+}
+
+.total-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: black;
+}
+
+.total-price {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 2rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    background: var(--green-main);
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--main-color);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 6rem;
+    color: black;
+    cursor: pointer;
+}
+
+#close-cart:hover {
+    color: var(--main-color);
+}
+
+/* 
+================================================================================
+                                 WishList Conainer
+================================================================================
+*/
+
+.wish {
+    position: absolute;
+    top: 0rem;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+    background: var(--light-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.wish.active {
+    right: 0;
+    transition: .4s linear;
+}
+
+.wish-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--green-main);
+}
+
+.wish-detail-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.wish-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+
+.wish .wish-product-Title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: black;
+}
+
+.wish .wish-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    color: black;
+}
+
+.wish .wish-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#close-wish {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+
+#close-wish:hover {
+    color: var(--main-color);
+}
+
+.full-product-list {
+    margin-top: 12rem;
+}
+/*
+.product-wise-container {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-wise-row {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 1.5rem; 
+    justify-content: space-between; 
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================================================
+                          Media Queries Start
+=================================================================================*/
+
+@media (max-width:991px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        padding: 2rem;
+        animation: linear;
+    }
+
+    .header .icons .icons-item i {
+        font-size: 1.7rem;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .logo i {
+        display: none;
+    }
+
+    .header .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 35rem;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding-top: 10rem;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .navbar #close {
+        display: initial;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    .navbar #close:hover {
+        color: var(--main-color);
+    }
+
+    .section {
+        padding: 40px 40px;
+    }
+
+    .pro-container {
+        justify-content: center;
+    }
+
+    .pro {
+        margin: 2rem auto;
+    }
+
+    .pro .des h5 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .pro .cart {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:540px) {
+
+    .section {
+        padding: 5px;
+    }
+
+    .pro {
+        min-width: 70%;
+        margin: 2rem auto;
+    }
+
+    .pro img {
+        width: 100%;
+    }
+
+    .pro .des h5 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cart {
+        width: 300px;
+    }
+
+    .cart-box img {
+        width: 100%;
+    }
+
+    .cart-box .detail .cart-Title {
+        font-size: 2.3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .cart-box .detail .cart-price {
+        font-size: 3.3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .cart #close-cart {
+        font-size: 5rem;
+    }
+
+    .wish{
+        width: 300px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .section {
+        padding: 5px;
+    }
+
+    .section .row{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .pro {
+        min-width: 70%;
+        margin: 2rem;
+    }
+
+    .pro img {
+        width: 100%;
+    }
+
+    .pro .des h5 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cart {
+        width: 220px;
+    }
+
+    .cart-box img {
+        width: 100%;
+    }
+
+    .cart-box .detail .cart-Title {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+        margin-top: 4.8rem;
+    }
+
+    .cart #close-cart {
+        font-size: 5rem;
+    }
+
+    .wish {
+        width: 220px;
+    }
+
+    .wish .wish-title {
+        font-size: 4.5rem;
+    }
+
+    .wish-detail-box img {
+        width: 100%;
+    }
+
+    .wish-detail-box .detail .wish-Title {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .wish #close-wish {
+        font-size: 4.5rem;
+    }
+}

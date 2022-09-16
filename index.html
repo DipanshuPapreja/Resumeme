@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Shop </a>
+
+        <nav class="navbar">
+            <a href="#" class="active"> Home </a>
+            <a href="#"> About </a>
+            <a href="#"> Review </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Contact </a>
+            <a href="#" id="close"> <i class="fas fa-times"></i> </a>
+        </nav>
+
+         <!-- ============================ Right Icons ====================  -->
+        <div class="icons">
+            <a href="#" class="icons-item" id="menu-btn"> <i class="fas fa-bars"></i> </a>
+            <a href="#" class="icons-item" id="wish-btn"> <i class="fas fa-heart"></i> </a>
+            <a href="#" class="icons-item"> <i class="fas fa-search"></i> </a>
+            <a href="#" class="icons-item" id="cart-btn"> <i class="fas fa-shopping-cart"></i> </a>
+            <a href="#" class="button"> Login </a>
+        </div>
+
+         <!-- ================================== Side Cart ==========================================  -->
+        <div class="cart" id="scroll">
+
+            <h2 class="cart-title"> Your Cart </h2>
+
+            <div class="cart-content">
+            </div>
+
+            <div class="total">
+                <div class="total-title"> Total $ </div>
+                <div class="total-price"> 0 </div>
+            </div>
+
+            <button type="button" class="btn-buy"> Buy Now </button>
+
+            <i class="bx bx-x" id="close-cart"></i>
+        </div>
+         <!-- ================================== Side Cart ========================================== -->
+
+         <!-- ================================== Side WishList ==========================================  -->
+        <div class="wish" id="wish-scroll">
+            <h2 class="wish-title"> WishList </h2>
+
+            <div class="wish-content">
+            </div>
+            <i class="bx bx-x" id="close-wish"></i>
+        </div>
+         <!-- ================================== Side Wishlist ========================================== -->
+    </header>
+
+    <div class="flex-container">
+        <div class="product-wise-col-5">
+            <a href="https://www.youtube.com">
+                <img src="images/Shirts/f1.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="https://www.youtube.com">
+                <img src="images/Shirts/f1.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="https://www.youtube.com">
+                <img src="images/Shirts/f2.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="https://www.youtube.com">
+                <img src="images/Shirts/f3.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f4.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f5.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f6.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f1.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f2.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f3.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+
+        <div class="product-wise-col-5">
+            <a href="#">
+                <img src="images/Shirts/f4.jpg" alt="">
+                <h5> Product </h5>
+            </a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="first">
+                    <h1 class="title"> Beauty Toys and More </h1>
+                    <p class="small-title"> Beauty Toys and More </p>
+                </div>
+                <a href="#"> <button class="viewall-button"> View More </button> </a>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f1.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $100 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f2.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $75 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f3.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $140 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $120 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $90 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $110 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $130 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f6.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $150 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="first">
+                    <h1 class="title"> Beauty Toys and More </h1>
+                    <p class="small-title"> Beauty Toys and More </p>
+                </div>
+                <a href="#"> <button class="viewall-button"> View More </button> </a>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f1.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $100 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f2.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $75 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f3.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $140 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $120 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $90 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $110 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $130 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f6.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $150 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="first">
+                    <h1 class="title"> Beauty Toys and More </h1>
+                    <p class="small-title"> Beauty Toys and More </p>
+                </div>
+                <a href="#"> <button class="viewall-button"> View More </button> </a>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f1.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $100 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f2.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $75 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f3.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $140 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $120 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $90 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $110 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $130 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f6.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $150 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="first">
+                    <h1 class="title"> Beauty Toys and More </h1>
+                    <p class="small-title"> Beauty Toys and More </p>
+                </div>
+                <a href="#"> <button class="viewall-button"> View More </button> </a>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f1.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $100 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f2.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $75 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f3.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $140 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon Astronaut T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $120 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Cartoon T-Shirt </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $90 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f4.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Astronaut T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $110 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f5.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $130 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+
+                <div class="pro item">
+                    <div class="des">
+                        <img src="images/Shirts/f6.jpg" alt="" class="productimage">
+                        <h5 class="producttitle"> T-Shirts </h5>
+                        <span> Addidas </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="productprice"> $150 </h4>
+                        <i class="fas fa-heart heart addwish"></i>
+                        <i class="fal fa-shopping-cart addcart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="cart-box">
+                    <img src="images/product-1.jpg" alt="product-1" class="cart-img">
+                    <div class="detail">
+                        <div class="cart-product-title"> Red T-Shirt </div>
+                        <div class="cart-price"> $25 </div>
+                         <input type="number" value="1" class="cart-quantity"> 
+                    </div>
+                    <i class="bx bxs-trash-alt cart-remove"></i>
+                </div> -->
+
+
+<!-- <div class="wish-detail-box">
+                    <img src="images/product-1.jpg" alt="product-1" class="wish-img">
+                    <div class="wish-detail">
+                        <div class="wish-product-title"> Red T-Shirt </div>
+                        <div class="wish-price"> $25 </div>
+                    </div>
+                    <i class="bx bxs-trash-alt cart-remove"></i>
+                </div> -->
